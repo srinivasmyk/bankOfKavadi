@@ -189,7 +189,7 @@ const displayMovements = function (acc, sort = false) {
     } ${type} 
     </div>
     <div class="movements__date">${displayDate}</div>
-        <div class="movements__value">${mov}€</div>
+        <div class="movements__value">${mov}₹</div>
       </div>
     `;
 
