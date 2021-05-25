@@ -270,10 +270,10 @@ aptrinsic("identify",
   {
   //User Fields
     "id": currentAccount.owner, // Required for logged in app users
-    "email": currentAccount.owner.toLowerCase().split(' ')[0]+currentAccount.owner.toLowerCase().split(' ')[1]+"bok.in",
+    "email": currentAccount.owner.toLowerCase().split(' ')[0]+currentAccount.owner.toLowerCase().split(' ')[1]+"@bok.in",
     "firstName": currentAccount.owner.split(' ')[0],
     "lastName": currentAccount.owner.split(' ')[1],
-    "signUpDate": 1522697426479, //unix time in ms
+    "signUpDate": parseInt((new Date().getTime() / 1000).toFixed(0)), //unix time in ms
     "plan" : "gold", //Custom attributes - please create those custom attributes in Aptrinsic via Account Settings to be tracked.
     "price" : 95.5,
     "userHash": "" // optional transient for HMAC identification
