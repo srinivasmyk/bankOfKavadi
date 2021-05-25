@@ -256,11 +256,34 @@ const calcPrintBalance= function(account){
 // containerApp.style.opacity=100;
 
 
+//////Login//////////////////////////
+
+
 btnLogin.addEventListener('click',function(e){
   ///prevent form from submitting 
   e.preventDefault();
   currentAccount= accounts.find(acc=>acc.userName===inputLoginUsername.value);
   if(currentAccount?.pin===Number(inputLoginPin.value)){
+     
+     //passing user and account objects:
+aptrinsic("identify",
+  {
+  //User Fields
+    "id": currentAccount.owner, // Required for logged in app users
+    "email": currentAccount.owner.toLowerCase().split(' ')[0]+currentAccount.owner.toLowerCase().split(' ')[1]+"bok.in",
+    "firstName": currentAccount.owner.split(' ')[0],
+    "lastName": currentAccount.owner.split(' ')[1],
+    "signUpDate": 1522697426479, //unix time in ms
+    "plan" : "gold", //Custom attributes - please create those custom attributes in Aptrinsic via Account Settings to be tracked.
+    "price" : 95.5,
+    "userHash": "" // optional transient for HMAC identification
+  },
+  {
+  //Account Fields
+    "id":"BOK", //Required
+    "name":"Bank of Kavadi",
+    "Program": "Platinum" // flat custom attributes
+ });
    ///display UI welcome message
    labelWelcome.textContent= `Welcome back, ${currentAccount.owner.split(' ')[0]}`;
    containerApp.style.opacity=100;
