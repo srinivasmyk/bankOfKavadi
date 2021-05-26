@@ -386,7 +386,8 @@ receiverAccount.movementsDates.push(new Date().toISOString());
 currentAccount.movementsDates.push(new Date().toISOString());
       updateUI(currentAccount);
       ///
-    
+    ///PX custom event
+       aptrinsic('track', 'Loan', {"amount":amount}); 
     }
     inputLoanAmount.value='';
     clearInterval(timer);
@@ -410,6 +411,11 @@ btnClose.addEventListener('click', function(e){
       accounts.splice(index,1);
       ////hide Ui
     containerApp.style.opacity=0;
+	  const closingBalance= currentAccount.movements.reduce((acc,cur,i,arr) =>
+   acc+=cur
+,0);
+	  ///PX custom event
+       aptrinsic('track', 'close account', {"account user": currentAccount.owner,"closing Balance": closingBalance}); 
   }
   inputCloseUsername.value=inputClosePin.value='';
 
