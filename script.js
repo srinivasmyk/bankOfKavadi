@@ -320,6 +320,8 @@ labelDate.textContent=`${day}/${month}/${year},${hour}:${minutes}`;
 /////
 function logout() {
 	window.aptrinsic('reset');
+	   containerApp.style.opacity=0;
+
 }
 
 /////////UI Update//////////////
