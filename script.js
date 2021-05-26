@@ -284,7 +284,7 @@ aptrinsic("identify",
     "name":"Bank of Kavadi",
     "Program": "Platinum" // flat custom attributes
  });
-aptrinsic('set', 'globalContext', {"userType" : “Admin”});
+aptrinsic('set', 'globalContext', {'userType' : 'Admin'});
 
    ///display UI welcome message
    labelWelcome.textContent= `Welcome back, ${currentAccount.owner.split(' ')[0]}`;
