@@ -90,6 +90,7 @@ const labelSumInterest = document.querySelector('.summary__value--interest');
 const labelTimer = document.querySelector('.timer');
 
 const containerApp = document.querySelector('.app');
+const logoutButton = document.querySelector('.login__btn');
 const containerMovements = document.querySelector('.movements');
 
 const btnLogin = document.querySelector('.login__btn');
@@ -321,6 +322,8 @@ labelDate.textContent=`${day}/${month}/${year},${hour}:${minutes}`;
 function logout() {
 	window.aptrinsic('reset');
 	   containerApp.style.opacity=0;
+	logoutButton.style.opacity=0;
+	
 
 }
 
