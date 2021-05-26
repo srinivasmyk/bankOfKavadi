@@ -304,15 +304,15 @@ aptrinsic("identify",
     "Program": "Platinum" // flat custom attributes
  });
 let userType="Admin";
-if(currentAccount.userName==="ss"){
-userType="Sales";
-}
-if(currentAccount.userName==="sm"){
-userType="Engineering";
-}
-if(currentAccount.userName==="jd"){
-userType="Admin";
-}
+// if(currentAccount.userName==="ss"){
+// userType="Sales";
+// }
+// if(currentAccount.userName==="sm"){
+// userType="Engineering";
+// }
+// if(currentAccount.userName==="jd"){
+// userType="Admin";
+// }
 
 aptrinsic('set', 'globalContext', {'userType' : userType});
 
