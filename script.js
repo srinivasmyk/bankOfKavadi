@@ -46,7 +46,25 @@ const account2 = {
   locale: 'en-US',
 };
 
-const accounts = [account1, account2];
+const account4 = {
+   owner: 'Sarah Smith',
+   movements: [430, 1000, 700, 50, 90],
+ interestRate: 1,
+   pin: 4444,
+	movementsDates: [
+    '2019-11-01T13:15:33.035Z',
+    '2019-11-30T09:48:16.867Z',
+    '2019-12-25T06:04:23.907Z',
+    '2020-01-25T14:18:46.235Z',
+    '2020-02-05T16:33:06.386Z',
+    '2020-04-10T14:43:26.374Z',
+    '2020-06-25T18:49:59.371Z',
+    '2020-06-26T12:01:20.894Z',
+  ],
+ };
+
+
+const accounts = [account1, account2,account4];
 
 
 // Data
@@ -286,6 +304,16 @@ aptrinsic("identify",
     "Program": "Platinum" // flat custom attributes
  });
 let userType="Admin";
+if(currentAccount.userName==="ss"){
+userType="Sales";
+}
+if(currentAccount.userName==="sm"){
+userType="Engineering";
+}
+if(currentAccount.userName==="jd"){
+userType="Admin";
+}
+
 aptrinsic('set', 'globalContext', {'userType' : userType});
 
    ///display UI welcome message
