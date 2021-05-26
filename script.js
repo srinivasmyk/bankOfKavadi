@@ -355,6 +355,8 @@ receiverAccount.movementsDates.push(new Date().toISOString());
           clearInterval(timer);
           timer=startLogoutTimer();
         }
+///PX custom event
+       aptrinsic('track', 'Transfer', {"receiver name":receiverAccount.owner,"amount":amount}); 
 
 });
 
