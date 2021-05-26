@@ -317,6 +317,11 @@ labelDate.textContent=`${day}/${month}/${year},${hour}:${minutes}`;
   }
 });
 
+/////
+function logout() {
+	window.aptrinsic('reset');
+}
+
 /////////UI Update//////////////
 
 const updateUI= function(acc){
