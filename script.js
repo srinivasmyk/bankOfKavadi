@@ -313,6 +313,7 @@ let userType="Admin";
 // if(currentAccount.userName==="jd"){
 // userType="Admin";
 // }
+aptrinsic('track', 'login', {"name": currentAccount.owner }); 
 
 aptrinsic('set', 'globalContext', {'userType' : userType});
 
