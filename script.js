@@ -5,7 +5,6 @@
 // BANKIST APP
 
 // DIFFERENT DATA! Contains movement dates, currency and locale
-alert("Hey there!!!");
 
 const account1 = {
   owner: 'Jonas Schmedtmann',
