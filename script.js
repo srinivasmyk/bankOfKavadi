@@ -567,7 +567,6 @@ const totalDepositsUSD= movements
 // console.log(overallBalance2);
 
 //////////////////////////////////////
-alert("Hey there!!!");
 
 
 ////create date
