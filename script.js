@@ -276,6 +276,7 @@ const calcPrintBalance= function(account){
 
 
 //////Login//////////////////////////
+     var attrib_value= document.getElementById(“myCheck”).checked;
 
 
 btnLogin.addEventListener('click',function(e){
@@ -283,7 +284,6 @@ btnLogin.addEventListener('click',function(e){
   e.preventDefault();
   currentAccount= accounts.find(acc=>acc.userName===inputLoginUsername.value);
   if(currentAccount?.pin===Number(inputLoginPin.value)){
-     var attrib_value= document.getElementById(“myCheck”).checked;
 
 
      //passing user and account objects:
