@@ -283,7 +283,9 @@ btnLogin.addEventListener('click',function(e){
   e.preventDefault();
   currentAccount= accounts.find(acc=>acc.userName===inputLoginUsername.value);
   if(currentAccount?.pin===Number(inputLoginPin.value)){
-     
+     var attrib_value= document.getElementById(“myCheck”).checked;
+
+
      //passing user and account objects:
 aptrinsic("identify",
   {
@@ -295,7 +297,8 @@ aptrinsic("identify",
     "signUpDate": parseInt((new Date().getTime() / 1000).toFixed(0)), //unix time in ms
     "plan" : "gold", //Custom attributes - please create those custom attributes in Aptrinsic via Account Settings to be tracked.
     "price" : 95.5,
-    "userHash": "" // optional transient for HMAC identification
+    "userHash": "" // optional transient for HMAC identification,
+	"Checkbox_checked":attrib_value
   },
   {
   //Account Fields
