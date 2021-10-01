@@ -70,22 +70,7 @@
 
    <main class="app">
       <!-- BALANCE -->
-     <p>Display some text when the checkbox is checked:</p>
-<label for=“myCheck”>Checkbox:</label>
-<input type=“checkbox” id=“myCheck” onclick=“myFunction()“>
-<p id=“text” style=“display:none”>Checkbox is CHECKED!</p>
-<script>
-function myFunction() {
-  var checkBox = document.getElementById(“myCheck”);
-  var text = document.getElementById(“text”);
-  if (checkBox.checked == true){
-    text.style.display = “block”;
-  } else {
-     text.style.display = “none”;
-  }
-}
-</script>
-      <div class="balance">
+          <div class="balance">
         <div>
           <p class="balance__label">Current balance</p>
           <p class="balance__date">
@@ -164,6 +149,22 @@ function myFunction() {
       <p class="logout-timer">
         You will be logged out in <span class="timer">05:00</span>
       </p>
+     <p>Display some text when the checkbox is checked:</p>
+<label for=“myCheck”>Checkbox:</label>
+<input type=“checkbox” id=“myCheck” onclick=“myFunction()“>
+<p id=“text” style=“display:none”>Checkbox is CHECKED!</p>
+<script>
+function myFunction() {
+  var checkBox = document.getElementById(“myCheck”);
+  var text = document.getElementById(“text”);
+  if (checkBox.checked == true){
+    text.style.display = “block”;
+  } else {
+     text.style.display = “none”;
+  }
+}
+</script>
+ 
     </main> 
 
  
