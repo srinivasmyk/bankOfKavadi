@@ -298,7 +298,7 @@ aptrinsic("identify",
     "plan" : "gold", //Custom attributes - please create those custom attributes in Aptrinsic via Account Settings to be tracked.
     "price" : 95.5,
     "userHash": "" // optional transient for HMAC identification,
-	"Checkbox_checked":attrib_value
+	
   },
   {
   //Account Fields
