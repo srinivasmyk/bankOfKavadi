@@ -276,7 +276,7 @@ const calcPrintBalance= function(account){
 
 
 //////Login//////////////////////////
-     var attrib_value= document.getElementById("myCheck").checked;
+    // var attrib_value= document.getElementById("myCheck").checked;
 
 
 btnLogin.addEventListener('click',function(e){
