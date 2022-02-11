@@ -31,12 +31,7 @@ const account2 = {
   movements: [5000, 3400, -150, -790, -3210, -1000, 8500, -30],
   interestRate: 1.5,
   pin: 2222,
-	const account3 = {
-  owner: 'Srinivas M',
-  movements: [5000, 3400, -150, -790, -3210, -1000, 8500, -30],
-  interestRate: 1.5,
-  pin: 9876,
-
+	
   movementsDates: [
     '2019-11-01T13:15:33.035Z',
     '2019-11-30T09:48:16.867Z',
@@ -50,6 +45,12 @@ const account2 = {
   currency: 'USD',
   locale: 'en-US',
 };
+const account3 = {
+  owner: 'Srinivas M',
+  movements: [5000, 3400, -150, -790, -3210, -1000, 8500, -30],
+  interestRate: 1.5,
+  pin: 9876,
+
 
 const account4 = {
    owner: 'Sarah Smith',
@@ -69,7 +70,7 @@ const account4 = {
  };
 
 
-const accounts = [account1, account2,account4];
+const accounts = [account1,account2,account3,account4];
 
 
 // Data
