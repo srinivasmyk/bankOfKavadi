@@ -201,6 +201,7 @@ const timer=setInterval(function() {
    clearInterval(timer);
    labelWelcome.textContent= 'Log in to get started';
    containerApp.style.opacity=0;
+	   window.aptrinsic('reset');
    }
    time--;
 
