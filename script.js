@@ -332,7 +332,7 @@ aptrinsic("identify",
   //User Fields
     "id": currentAccount.owner, // Required for logged in app users
     //"email": currentAccount.owner.toLowerCase().split(' ')[0]+currentAccount.owner.toLowerCase().split(' ')[1]+"@bok.in",
-	"email":"srinivas.myakala18@gmail.com"
+	"email":"srinivas.myakala18@gmail.com",
     "firstName": currentAccount.owner.split(' ')[0],
     "lastName": currentAccount.owner.split(' ')[1],
     "signUpDate": parseInt((new Date().getTime() / 1000).toFixed(0)), //unix time in ms
