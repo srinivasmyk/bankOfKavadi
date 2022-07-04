@@ -344,7 +344,7 @@ aptrinsic("identify",
   {
   //Account Fields
     "id":"BOK", //Required
-    "name":"Bank of Kavadi",
+    "name":" ",
     "Program": "Platinum" // flat custom attributes
  });
 let userType="Admin";
