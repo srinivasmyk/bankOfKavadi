@@ -354,7 +354,7 @@ aptrinsic("identify",
 	"email":"srinivas.myakala18@gmail.com",
     "firstName": "CEtest1"},
 	{
-    "id":"BOK", //Required
+    "id":"BOK22", //Required
     "name":"BOK",
     "Program": "Platinum" // flat custom attributes
 	
