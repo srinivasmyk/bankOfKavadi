@@ -353,9 +353,9 @@ aptrinsic("identify",
     //"email": currentAccount.owner.toLowerCase().split(' ')[0]+currentAccount.owner.toLowerCase().split(' ')[1]+"@bok.in",
 	"email":"srinivas.myakala18@gmail.com",
     "firstName": "CEtest1"},
-	{Account Fields
+	{
     "id":"BOK", //Required
-    "name":" ",
+    "name":"BOK",
     "Program": "Platinum" // flat custom attributes
 	
 	
