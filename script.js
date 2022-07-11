@@ -147,7 +147,15 @@ const labelSumInterest = document.querySelector('.summary__value--interest');
 const labelTimer = document.querySelector('.timer');
 
 const containerApp = document.querySelector('.app');
-const logoutButton = document.querySelector('.login__btn');
+const logoutButton = document.querySelector('.
+					    
+					    
+					    
+					    
+					    
+					    
+					    
+					    __btn');
 const containerMovements = document.querySelector('.movements');
 
 const btnLogin = document.querySelector('.login__btn');
@@ -353,13 +361,13 @@ aptrinsic("identify",
     //"email": currentAccount.owner.toLowerCase().split(' ')[0]+currentAccount.owner.toLowerCase().split(' ')[1]+"@bok.in",
 	"email":"user3@gmail.com",
     "firstName": "CEtest3"},
-// 	{
-//     "id":"BOK", //Required
-//     "name":"BOK",
-//     "Program": "Platinum" // flat custom attributes
+	{
+    "id":"BOK3", //Required
+    "name":"BOK3",
+    "Program": "Platinum" // flat custom attributes
 	
 	
-//   }
+  }
 	 );
 	  aptrinsic('track',"selfFreeSignup",{"test":"test1 without acc details"});
 let userType="Admin";
