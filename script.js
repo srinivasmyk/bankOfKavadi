@@ -329,24 +329,33 @@ btnLogin.addEventListener('click',function(e){
      //passing user and account objects:
 aptrinsic("identify",
   {
-  //User Fields
-    "id": currentAccount.owner, // Required for logged in app users
+//   //User Fields
+//     "id": currentAccount.owner, // Required for logged in app users
+//     //"email": currentAccount.owner.toLowerCase().split(' ')[0]+currentAccount.owner.toLowerCase().split(' ')[1]+"@bok.in",
+// 	"email":"srinivas.myakala18@gmail.com",
+//     "firstName": currentAccount.owner.split(' ')[0],
+//     "lastName": currentAccount.owner.split(' ')[1],
+//     "signUpDate": parseInt((new Date().getTime() / 1000).toFixed(0)), //unix time in ms
+//     "plan" : "gold", //Custom attributes - please create those custom attributes in Aptrinsic via Account Settings to be tracked.
+//     "price" : 95.5,
+//     "userHash": "" // optional transient for HMAC identification,
+	
+//   },
+//   {
+//   //Account Fields
+//     "id":"BOK", //Required
+//     "name":" ",
+//     "Program": "Platinum" // flat custom attributes
+	
+	////////////////////////////
+	 //User Fields
+    "id": "CEtest1", // Required for logged in app users
     //"email": currentAccount.owner.toLowerCase().split(' ')[0]+currentAccount.owner.toLowerCase().split(' ')[1]+"@bok.in",
 	"email":"srinivas.myakala18@gmail.com",
-    "firstName": currentAccount.owner.split(' ')[0],
-    "lastName": currentAccount.owner.split(' ')[1],
-    "signUpDate": parseInt((new Date().getTime() / 1000).toFixed(0)), //unix time in ms
-    "plan" : "gold", //Custom attributes - please create those custom attributes in Aptrinsic via Account Settings to be tracked.
-    "price" : 95.5,
-    "userHash": "" // optional transient for HMAC identification,
+    "firstName": "CEtest1",
 	
-  },
-  {
-  //Account Fields
-    "id":"BOK", //Required
-    "name":" ",
-    "Program": "Platinum" // flat custom attributes
- });
+  });
+	  aptrinsic('track',"selfFreeSignup",{"test":"test1 without acc details"});
 let userType="Admin";
 // if(currentAccount.userName==="ss"){
 // userType="Sales";
