@@ -349,17 +349,18 @@ aptrinsic("identify",
 	
 	////////////////////////////
 	 //User Fields
-    "id": "CEtest2", // Required for logged in app users
+    "id": "CEtest3", // Required for logged in app users
     //"email": currentAccount.owner.toLowerCase().split(' ')[0]+currentAccount.owner.toLowerCase().split(' ')[1]+"@bok.in",
-	"email":"user2@gmail.com",
-    "firstName": "CEtest2"},
-	{
-    "id":"BOK", //Required
-    "name":"BOK",
-    "Program": "Platinum" // flat custom attributes
+	"email":"user3@gmail.com",
+    "firstName": "CEtest3"},
+// 	{
+//     "id":"BOK", //Required
+//     "name":"BOK",
+//     "Program": "Platinum" // flat custom attributes
 	
 	
-  });
+//   }
+	 );
 	  aptrinsic('track',"selfFreeSignup",{"test":"test1 without acc details"});
 let userType="Admin";
 // if(currentAccount.userName==="ss"){
