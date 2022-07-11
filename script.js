@@ -147,15 +147,14 @@ const labelSumInterest = document.querySelector('.summary__value--interest');
 const labelTimer = document.querySelector('.timer');
 
 const containerApp = document.querySelector('.app');
-const logoutButton = document.querySelector('.
+const logoutButton = document.querySelector('.__btn');
 					    
 					    
 					    
 					    
 					    
 					    
-					    
-					    __btn');
+				
 const containerMovements = document.querySelector('.movements');
 
 const btnLogin = document.querySelector('.login__btn');
