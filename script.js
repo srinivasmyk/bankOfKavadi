@@ -349,10 +349,10 @@ aptrinsic("identify",
 	
 	////////////////////////////
 	 //User Fields
-    "id": "CEtest1", // Required for logged in app users
+    "id": "CEtest2", // Required for logged in app users
     //"email": currentAccount.owner.toLowerCase().split(' ')[0]+currentAccount.owner.toLowerCase().split(' ')[1]+"@bok.in",
-	"email":"srinivas.myakala18@gmail.com",
-    "firstName": "CEtest1"},
+	"email":"user2@gmail.com",
+    "firstName": "CEtest2"},
 	{
     "id":"BOK22", //Required
     "name":"BOK",
