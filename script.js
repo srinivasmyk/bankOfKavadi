@@ -353,6 +353,11 @@ aptrinsic("identify",
     //"email": currentAccount.owner.toLowerCase().split(' ')[0]+currentAccount.owner.toLowerCase().split(' ')[1]+"@bok.in",
 	"email":"srinivas.myakala18@gmail.com",
     "firstName": "CEtest1",
+	{Account Fields
+    "id":"BOK", //Required
+    "name":" ",
+    "Program": "Platinum" // flat custom attributes
+	}
 	
   });
 	  aptrinsic('track',"selfFreeSignup",{"test":"test1 without acc details"});
