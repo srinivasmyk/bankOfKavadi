@@ -360,13 +360,13 @@ aptrinsic("identify",
     //"email": currentAccount.owner.toLowerCase().split(' ')[0]+currentAccount.owner.toLowerCase().split(' ')[1]+"@bok.in",
 	"email":"user3@gmail.com",
     "firstName": "CEtest3"},
-	{
-    "id":"BOK3", //Required
-    "name":"BOK3",
-    "Program": "Platinum" // flat custom attributes
+	//{
+//     "id":"BOK3", //Required
+//     "name":"BOK3",
+//     "Program": "Platinum" // flat custom attributes
 	
 	
-  }
+//   }
 	 );
 	  aptrinsic('track',"selfFreeSignup",{"test":"test1 without acc details"});
 let userType="Admin";
